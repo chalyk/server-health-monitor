@@ -17,7 +17,7 @@ bash# Skript ausführbar machen
 chmod +x monitor.sh
 
 # Skript starten
-./monitor.sh
+./monitor_neu.sh
 Beispiel-Ausgabe
 ==============================================
   Server Health Monitor  |  2026-03-23 14:32:01
@@ -43,11 +43,11 @@ bash# Crontab öffnen
 crontab -e
 
 # Diese Zeile hinzufügen (jede Stunde)
-0 * * * * /pfad/zu/monitor.sh
+0 * * * * /pfad/zu/monitor_neu.sh
 
 📁 Projektstruktur
 server-health-monitor/
-├── monitor.sh       # Hauptskript
+├── monitor_neu.sh       # Hauptskript
 ├── logs/            # Automatisch erstelltes Log-Verzeichnis
 │   └── server_health_YYYY-MM-DD.log
 └── README.md
